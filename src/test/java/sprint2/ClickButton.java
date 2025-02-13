@@ -1,3 +1,5 @@
+package sprint2;
+
 import PageObjects.BaseTest;
 import PageObjects.HomePage;
 import com.fasterxml.jackson.databind.ser.Serializers;
