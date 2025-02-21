@@ -1,5 +1,6 @@
 package PageObjects;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.remote.MobileCapabilityType;
 import org.openqa.selenium.MutableCapabilities;
@@ -10,19 +11,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.BeforeTest;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 
 public class BaseTest {
 
     protected static AndroidDriver driver;
     public static final String SL_username = System.getenv("Morso777");
     public static final String SL_accessKey = System.getenv("f516c32f-cf88-430f-a6bc-221b960ede3f");
-
-
-
 
 
 
