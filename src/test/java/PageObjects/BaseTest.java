@@ -16,9 +16,6 @@ import org.testng.annotations.*;
 public class BaseTest {
 
     protected static AndroidDriver driver;
-    public static final String SL_username = System.getenv("Morso777");
-    public static final String SL_accessKey = System.getenv("f516c32f-cf88-430f-a6bc-221b960ede3f");
-
 
 
     @BeforeMethod
@@ -30,8 +27,8 @@ public class BaseTest {
         caps.setCapability("appium:platformVersion", "12.0");
         caps.setCapability("appium:automationName", "UiAutomator2");
         MutableCapabilities sauceOptions = new MutableCapabilities();
-        sauceOptions.setCapability("username", SL_username);
-        sauceOptions.setCapability("accessKey", SL_accessKey);
+        sauceOptions.setCapability("username", "username");
+        sauceOptions.setCapability("accessKey", "key");
         sauceOptions.setCapability("build", "appium-build-R0OJR");
         sauceOptions.setCapability("name", "<Test launch app>");
         sauceOptions.setCapability("deviceOrientation", "PORTRAIT");
@@ -42,7 +39,7 @@ public class BaseTest {
         caps.setCapability("appActivity", "io.appium.android.apis.ApiDemos");
 
         // Start the session
-        URL url = new URL("https://ondemand.us-west-1.saucelabs.com:443/wd/hub");
+        URL url = new URL("https://");
         //AndroidDriver driver = new AndroidDriver(url, caps);
         driver = new AndroidDriver(url, caps);
 
