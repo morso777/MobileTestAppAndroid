@@ -17,7 +17,7 @@ public class BaseTest {
 
     protected static AndroidDriver driver;
 
-
+/*
     @BeforeMethod
     public void setupSauceLabs() throws InterruptedException, MalformedURLException {
         MutableCapabilities caps = new MutableCapabilities();
@@ -55,11 +55,11 @@ public class BaseTest {
         driver.executeScript("sauce:job-result=" + jobStatus);
         driver.quit();
     }
+*/
 
 
 
 
-/*
     @BeforeMethod
     public void setupLocal() {
         DesiredCapabilities caps = new DesiredCapabilities();
@@ -93,6 +93,6 @@ public class BaseTest {
     public void tearDownLocal() {
         driver.quit();
     }
-*/
+
 
 }
